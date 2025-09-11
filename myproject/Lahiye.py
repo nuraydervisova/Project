@@ -6,4 +6,4 @@ def about_aesma():
     return render_template("index.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=5151, host="0.0.0.0", debug=True)
