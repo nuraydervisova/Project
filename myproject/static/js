@@ -1,7 +1,21 @@
-let scrollAmount = 0;
-const slider = document.getElementById('sliderTrack');
-function slide(direction) {
-    const slideAmount = 220; // hər klikdə nə qədər sağa/sola sürüşsün
-    scrollAmount += direction * slideAmount;
-    slider.style.transform = `translateX(${-scrollAmount}px)`;
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const sliderTrack = document.getElementById('sliderTrack');
+    const prevBtn = document.querySelector('.slider-prev');
+    const nextBtn = document.querySelector('.slider-next');
+
+    let scrollAmount = 0;
+    const scrollStep = 220;
+
+    prevBtn.addEventListener('click', () => {
+        scrollAmount -= scrollStep;
+        if(scrollAmount < 0) scrollAmount = 0;
+        sliderTrack.style.transform = 'translateX(' + (-scrollAmount) + 'px)';
+    });
+
+    nextBtn.addEventListener('click', () => {
+        const maxScroll = sliderTrack.scrollWidth - sliderTrack.clientWidth;
+        scrollAmount += scrollStep;
+        if(scrollAmount > maxScroll) scrollAmount = maxScroll;
+        sliderTrack.style.transform = 'translateX(' + (-scrollAmount) + 'px)';
+    });
+});

@@ -1,90 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>WEB SAYT</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AƏSMA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <div class="top-blue-line"></div>
-  <div class="top-gray-line"></div>
-  <div class="container">
-    <div class="navbar">
-      <div class="logo">
-        <img src="/home/10955@holbertonstudents.com/Downloads/logo.png" alt="AƏSMA Logo"/>
-      </div>
-    </div>
-    <div class="center">
-      <h1>Azərbaycan Əmək və <br>Sosial Münasibətlər<br>Akademiyası</h1>
-      <img src="https://www.ahik.org/storage/pages/1/whatsapp-image-2025-08-26-at-180001-1.jpg" alt="foto" />
-      <div class="text-and-degrees">
-        <p>
-          Azərbaycan Əmək və Sosial Münasibətlər Akademiyası <br>2006‑cı ildə yaradılmışdır və müstəqil ali təhsil müəssisəsi kimi fəaliyyət göstərir.<br>
-          Bu gün AƏSMA müasir əmək bazarının tələblərinə uyğun yüksəkixtisaslı <br>kadrların hazırlanmasını həyata keçirir.Həmçinin akademiyada son illerde <br>
-          tələbələrin ixtisaslaşmış kadr kimi formalaşması <br>məqsədilə müxtəlif təlim kursları, könüllülük layihələri və digər innovativ <br>
-          təşəbbüslər həyata keçirilərək onların peşəkar bacarıqları və<br> sosial aktivliyi artırılır.<br>
-          Akademiyada iki fakültə – “Maliyyə-İqtisad” və “Sosial iş” fakültələri fəaliyyət göstərir.<br>
-          Akademiyada bir kitabxana, iki akt zalı və bir inkişaf mərkəzi mövcuddur. Hər bir xüsusi gün xüsusi diqqət mərkəzində saxlanılaraq, həmin günlərin əhəmiyyətinə uyğun tədbirlər sistemli şəkildə təşkil olunur.
-        </p>
-        <div class="degree-section">
-          <div class="degree-box">
-            <h2>Bakalavriat səviyyəsində ixtisaslar:</h2>
-            <ul>
-              <li>Sosial iş</li>
-              <li>Marketinq</li>
-              <li>Dövlət və bələdiyyə idarəetməsi</li>
-              <li>Maliyyə</li>
-              <li>Mühasibat</li>
-              <li>İqtisadiyyat</li>
-            </ul>
-            <div class="small-bg"></div>
-          </div>
-          <div class="degree-box">
-            <h2>Magistratura səviyyəsində ixtisaslar:</h2>
-            <ul>
-              <li>Maliyyə</li>
-              <li>Mühasibat uçotu və audit</li>
-              <li>İqtisadiyyat</li>
-              <li>Marketinq</li>
-              <li>Sosial iş</li>
-            </ul>
-            <div class="small-bg"></div>
-          </div>
+    <div class="background-container">
+        <div class="navbar">
+            <div class="logo left-logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" />
+
+            </div>
+            <div class="aesma-title">
+                Azərbaycan Əmək və Sosial Münasibətlər Akademiyası
+            </div>
+            <div class="logo right-logo">
+                <img src="{{ url_for('static', filename='images/ahik.jpg') }}" alt="ahiklogo" />
+
+            </div>
         </div>
-      </div>
-      <h2>Böyük Akt Zalı</h2>
-      <div class="act-hall-section">
-        <img src="https://api.aesma.edu.az/dist/images/posts/0cfad814-bc6d-4372-8a30-b88a56080fa1.jpg" alt="Böyük Akt Zalı Şəkli" />
-        <p>
-          Azərbaycanda Teatr Memarlığı- XIX əsrin birinci yarısının sonlarında tamaşa binaları artıq Azərbaycan şəhərlərinin srukturuna daxil idi.
-          Peşəkar teatr deyəndə və onun fəaliyyəti barədə düşünəndə sözsüz ki, ilk növbədə sənət ocağının yerləşdiyi bina barədə fikirlər oyanır.
-          Elm sübut edib ki, teatr tamaşasının təlqin etdiyi bədii-estetik zövqün kökündə tamaşa oynanılan binanın texniki imkanları və texnologiyası da mühüm yer tutur.
-          Teatr binasının arxitektura özəllikləri müxtəlif şəkillərdə səhnə sənətinin gözəllik estetikasını istiqamətləndirir, onun özünəməxsusluğunun bədii səciyyələrini müəyyənləşdirir.
-        </p>
-      </div>
-      <h2>Kiçik Akt Zalı</h2>
-      <div class="act-hall-section reverse">
-        <p>
-          Ekoloji tərbiyə ətraf mühitin dərk olunması və təbiətə qayğı ilə yanaşmanın formalaşması proseslərindən keçir.
-          Ekoloji cəhətdən savadlı insan dərk etməlidir ki, təbiət də onun özü kimi canlıdır.
-          Təbiət güclüdür, ancaq bu güc tükənməz deyil.
-          Təhsil ocaqlarında ekoloji təhsilin gücləndirilməsinin tərəfdarları hesab edirlər ki,
-          uşağa kiçik yaşlarından təbiətə qayğı ilə yanaşmanı aşılamaqla biz onun şəxsiyyətinin formalaşmasına ciddi təkan vermiş oluruq.
-          Başqa sözlə, yeni nəsildə vətəndaş şüurunun formalaşdırılmasının əsas istiqamətlərindən biri də məhz ekoloji təhsil və tərbiyə olmalıdır.
-          Bu yolla gəncləri doğma torpağı və təbiəti sevməyə, ətraf mühitə biganəlikdən qaçmağa öyrədə bilərik.
-        </p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxxCDkjDQApaNQm--r8Pd_b3GZvRr3P29E0OfN2aHKJaZprShsxT9x-Md2491qb510YA&usqp=CAU" alt="Kiçik Akt Zalı Şəkli" />
-      </div>
-      <div class="footer-hours">
-        <h3>Akademiyanın iş saatları</h3>
-        <img src="https://cdn-icons-png.flaticon.com/512/747/747310.png" alt="Saat ikonu" class="clock-icon" />
-        <ul>
-          <li><strong>Bazar ertəsi - Cümə:</strong> 09:00 – 18:00</li>
-          <li><strong>Şənbə-Bazar:</strong> Bağlıdır</li>
-        </ul>
-      </div>
+
+        <!-- Hero Image -->
+        <img
+            src="{{ url_for('static', filename='images/Esas.jpg') }}"
+            alt="Akademiya Hero"
+            class="hero-image"
+        />
+
+
+        <!-- Description -->
+        <div class="description">
+              Azərbaycan Əmək və Sosial Münasibətlər Akademiyası 2006‑cı ildə yaradılmışdır və müstəqil ali təhsil müəssisəsi kimi fəaliyyət göstərir.Azərbaycan Həmkarlar İttifaqları Konfederasiyasının təsis etdiyi özəl ali təhsil müəssisəsidir. Akademiyanın əsas məqsədi ölkənin əmək bazarı və sosial münasibətlər sahəsində peşəkar kadrlar hazırlamaqdır. Tələbələrin akademik biliklərlə yanaşı, praktiki bacarıqlarını da inkişaf etdirməsi üçün müxtəlif kurslar və könüllülük proqramları keçirilir. Bu təşəbbüslər tələbələrə real həyatda təcrübə qazanmaq, fərdi və peşəkar inkişafa nail olmaq, eləcə də cəmiyyətə faydalı olmaq imkanı verir. Belə proqramlar tələbələrin gələcək karyeralarına hazırlıq üçün mühüm bir element hesab olunur. Bu gün AƏSMA müasir əmək bazarının tələblərinə uyğun yüksək ixtisaslı kadrların hazırlanmasını həyata keçirir. Akademiyada iki fakültə – “Maliyyə-İqtisad” və “Sosial iş” fakültələri fəaliyyət göstərir. Akademiyada bir kitabxana, iki akt zalı və bir inkişaf mərkəzi mövcuddur.
+        </div>
+
+        <!-- Degree Section -->
+        <div class="degree-section">
+            <div class="degree-box">
+                <h2>Bakalavr</h2>
+                <ul>
+                   <li>Sosial iş</li>
+                    <li>Marketinq</li>
+                    <li>İqtisadiyyat</li>
+                    <li>Maliyyə</li>
+                    <li>Mühasibat</li>
+                    <li>Dövlət və Bələdiyyə</li>
+                </ul>
+            </div>
+            <div class="degree-box">
+                <h2>Magistr</h2>
+                <ul>
+                    <li>Maliyyə</li>
+                    <li>Sosial iş</li>
+                    <li>İqtisadiyyat</li>
+                    <li>Marketinq</li>
+                    <li>Mühasibat və audit</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Akt Zalı bölməsi -->
+        <div class="act-hall">
+            <h2>Böyük Akt Zalı</h2>
+            <div class="act-hall-section">
+                <img src="{{ url_for('static', filename='images/boyukzal2.jpg') }}" alt="boyuk akt zali"  />
+                <p>Akademiyanın əsas tədbirlərinin keçirildiyi böyük akt zalı, öz memarlıq və funksional xüsusiyyətlərinə görə müxtəlif formatlı tədbirlərin təşkilinə imkan yaradır. Təxminən 80 metr uzunluğunda və 30 metr enində olan bu zal, ümumilikdə 288 oturacaq yeri ilə tələbə və qonaqları qəbul etmək gücünə malikdir.Zalın daxili tərtibatı üç hissədən ibarətdir və bu da məkanın səmərəli istifadəsini təmin edir. Oturacaqlar 15 cərgədə yerləşdirilmişdir. İlk beş cərgə xüsusi olaraq fəxri qonaqlar və tədbirin əsas iştirakçıları üçün nəzərdə tutulmuşdur ki, bu da yüksək səviyyəli tədbirlərin keçirilməsinə şərait yaradır.Zalın sahəsi üç ayrı girişdən və bir səhnədən ibarətdir.</p>
+        </div>
+
+        <div class="act-hall">
+            <h2>Kiçik Akt Zalı</h2>
+            <div class="act-hall-section reverse">
+                <p>Akademiyanın kiçik akt zalı daha yığcam tədbirlər üçün nəzərdə tutulmuş bir məkandır. 10 metr enində və 30 metr uzunluğunda olan bu zal, daha səmərəli və məqsədyönlü görüşlərin keçirilməsinə imkan verir.Zal ümumilikdə 50 oturacaq yerinə malikdir və 10 cərgədən ibarətdir. Məkana giriş bir əsas qapı vasitəsilə təmin olunur.Kiçik akt zalı, əsasən seminar, mühazirə, təlim və kiçik konfranslar kimi tədbirlər üçün istifadə olunur.</p>
+                <img src="{{ url_for('static', filename='images/kicikzal.jpeg') }}" alt="kicik akt zali" />
+            </div>
+        </div>
+
+        <div class="act-hall">
+            <h2>Dairəvi Masa</h2>
+            <div class="act-hall-section">
+                <img src="{{ url_for('static', filename='images/dairevimasa2.jpg') }}" alt="dairevi masa" />
+                <p>Akademiyanın iclas zalı kiçik qrup görüşləri və məhsuldar müzakirələr üçün ideal bir məkandır. Bu zalın əsas özəlliyi mərkəzdə yerləşən dairəvi masasıdır, bu da iştirakçılar arasında səmərəli və bərabər ünsiyyət mühiti yaradır. Bütün iştirakçılar danışıqlara eyni dərəcədə qatılır və hər kəsin fikri rahatlıqla dinlənir. Zal əsasən idarə heyəti və fakültə iclasları, kiçik iştirakçı qrupları üçün seminarlar, təlim proqramları və tələbələrin müəllimlərlə interaktiv açıq dərsləri üçün istifadə edilir. Zalın bu funksional tərtibatı sayəsində hər bir tədbir maksimum fayda ilə başa çatır.
+                    </p>
+                </div>
+            </div>
+        <div class="act-hall">
+            <h2>Həmkarlar İttifaqının Zalı</h2>
+            <div class="act-hall-section reverse">
+                <img src="{{ url_for('static', filename='images/hemkarlar.webp') }}" alt="telim otagi" /> 
+                <p> Azərbaycan Əmək və Sosial Münasibətlər Akademiyasının tərkibindəki Azərbaycan Həmkarlar İttifaqları Konfederasiyasının (AHİK) Zalı, Konfederasiyanın mərkəzi fəaliyyətlərinə xidmət edən əhəmiyyətli bir məkandır. Burada əsasən AHİK təlimləri, müxtəlif müqavilələrin imzalanması, rəsmi görüşlər və əhəmiyyətli tədbirlər keçirilir. Zalın funksional və texniki təchizatı bu tədbirlərin yüksək səviyyədə təşkilinə imkan verir.</p>
+                
+            </div>
+        </div>
+
+        <!-- Image Gallery Slider -->
+        <div class="image-gallery">
+            <h2>Şəkil Qalereyası</h2>
+            <div class="slider-container">
+                <button class="slider-btn slider-prev">&#8592;</button>
+                <div class="slider-track" id="sliderTrack">
+                    <img src="{{ url_for('static', filename='images/aesmagiris.jpg') }}" alt="aesma" />
+                    <img src="{{ url_for('static', filename='images/Men.jpg') }}" alt="Men" />
+                    <img src="{{ url_for('static', filename='images/aesma2.jpeg') }}" alt="AESMA2" />
+                    <img src="{{ url_for('static', filename='images/foto1.jpg') }}" alt="foto1" />
+                    <img src="{{ url_for('static', filename='images/kitabxana.jpg') }}" alt="kitabxana" />
+                    <img src="{{ url_for('static', filename='images/dairevimasa1.jpg') }}" alt="dairevimasa1" />
+                    <img src="{{ url_for('static', filename='images/komputer.jpg') }}" alt="komputer" />
+                    <img src="{{ url_for('static', filename='images/mezun1.jpeg') }}" alt="mezun" />
+                    <img src="{{ url_for('static', filename='images/foto2.jpeg') }}" alt="foto2" />
+                </div>
+                <button class="slider-btn slider-next">&#8594;</button>
+                <script src="{{ url_for('static', filename='js') }}"></script>
+            </div>
+        </div>
     </div>
-  </div>
+    <script src="{{ url_for('static', filename='js') }}"></script>
 </body>
 </html>
+
