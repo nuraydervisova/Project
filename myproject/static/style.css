@@ -11,7 +11,7 @@
             padding: 20px 0 40px;
             min-height: 100vh;
         }
-        /* Big background container */
+        
         .background-container {
             background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(12px);
@@ -23,7 +23,7 @@
             padding: 30px 40px 40px;
             box-shadow: 0 8px 20px rgba(51, 90, 162, 0.15);
         }
-        /* Navbar */
+        
         .navbar {
             display: flex;
             align-items: center;
@@ -67,7 +67,7 @@
             transform-style: preserve-3d;
             perspective: 500px;
         }
-        /* 3D Circle effect behind title */
+        
         .title-wrapper {
             position: relative;
             display: flex;
@@ -90,7 +90,7 @@
             from { transform: rotateX(0deg) rotateY(0deg); }
             to { transform: rotateX(360deg) rotateY(360deg); }
         }
-        /* Hero Image */
+        
         .hero-image {
             width: 100%;
             height: auto;
@@ -100,7 +100,7 @@
             margin-bottom: 30px;
             box-shadow: 0 6px 16px rgba(51,90,162,0.3);
         }
-        /* Description */
+        
         .description {
             font-size: 1rem;
             background-color: #f0f4fb;
@@ -111,7 +111,7 @@
             margin-bottom: 40px;
             box-shadow: 0 2px 10px rgba(51, 90, 162, 0.1);
         }
-        /* Degree Section */
+        
         .degree-section {
             display: flex;
             gap: 30px;
@@ -164,7 +164,7 @@
             background-color: #335AA2;
             color: white;
         }
-        /* Act Hall common style */
+        
         .act-hall {
             margin-top: 50px;
         }
@@ -174,7 +174,7 @@
             margin-bottom: 25px;
             text-align: center;
         }
-        /* Act Hall section container with side by side layout */
+        
         .act-hall-section {
             display: flex;
             align-items: center;
@@ -189,7 +189,7 @@
             border-left: 6px solid #335AA2;
             box-shadow: 0 4px 15px rgba(51,90,162,0.15);
         }
-        /* Reverse layout for alternate sections */
+        
         .act-hall-section.reverse {
             flex-direction: row-reverse;
         }
@@ -215,7 +215,7 @@
             font-weight: 600;
             margin-top: 15px;
         }
-        /* Image Gallery */
+        
         .image-gallery {
             margin-top: 40px;
             text-align: center;
@@ -257,7 +257,7 @@
             transform: scale(1.08);
             box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
         }
-        /* Navigation Buttons */
+
         .slider-btn {
             position: absolute;
             top: 50%;
@@ -282,7 +282,7 @@
         .slider-next {
             right: 10px;
         }
-        /* Responsive */
+        
         @media (max-width: 900px) {
             .degree-box {
                 max-width: 100%;
