@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AƏSMA</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='aboutstyle.css') }}">
 </head>
 <body>
     <div class="background-container">
@@ -101,8 +101,9 @@
                 <div class="slider-track" id="sliderTrack">
                     <img src="{{ url_for('static', filename='images/aesmagiris.jpg') }}" alt="aesma" class="clickable-img"/>
                     <img src="{{ url_for('static', filename='images/Men.jpg') }}" alt="Men" class="clickable-img"/>
+                    <img src="{{ url_for('static', filename='images/aesmafoe.jpg') }}" alt="foe" class="clickable-img"/>
+                    <img src="{{ url_for('static', filename='images/foe.jpg') }}" alt="foto1" class="clickable-img"/>
                     <img src="{{ url_for('static', filename='images/aesma2.jpeg') }}" alt="AESMA2" class="clickable-img"/>
-                    <img src="{{ url_for('static', filename='images/foto1.jpg') }}" alt="foto1" class="clickable-img"/>
                     <img src="{{ url_for('static', filename='images/kitabxana.jpg') }}" alt="kitabxana" class="clickable-img"/>
                     <img src="{{ url_for('static', filename='images/dairevimasa1.jpg') }}" alt="dairevimasa1" class="clickable-img"/>
                     <img src="{{ url_for('static', filename='images/komputer.jpg') }}" alt="komputer" class="clickable-img"/>
@@ -110,10 +111,13 @@
                     <img src="{{ url_for('static', filename='images/foto2.jpeg') }}" alt="foto2" class="clickable-img"/>
                 </div>
                 <button class="slider-btn slider-next">&#8594;</button>
-                <script src="{{ url_for('static', filename='js') }}"></script>
             </div>
         </div>
-        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js') }}">
+        
+    </script>
+
 </body>
 </html>
 
