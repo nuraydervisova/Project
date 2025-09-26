@@ -114,10 +114,20 @@
             </div>
         </div>
     </div>
-    <script src="{{ url_for('static', filename='js') }}">
-        
-    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let scrollAmount = 0;
+        const slider = document.getElementById('sliderTrack');
 
+        function slide(direction) {
+            const slideAmount = 220; 
+            scrollAmount += direction * slideAmount;
+            slider.style.transform = `translateX(${-scrollAmount}px)`;
+        }
+        document.querySelector('.slider-prev').addEventListener('click', () => slide(-1));
+        document.querySelector('.slider-next').addEventListener('click', () => slide(1));
+    });
+</script>
 </body>
 </html>
 
